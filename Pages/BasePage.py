@@ -1,6 +1,4 @@
 import time
-
-from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
@@ -37,7 +35,6 @@ class base:
         element2 = self.driver.find_element_by_xpath(by_locator2)
         action = ActionChains(self.driver)
         action.move_to_element(element1).move_to_element(element2).click().perform()
-
     def get_Title(self, title):
         WebDriverWait(self.driver, 10).until(EC.title_contains(title))
         return self.driver.title

@@ -6,6 +6,7 @@ from Utility.readProperties import cnfParser
 import pytest
 import allure
 
+
 class LoginPage(base):
     link_Login = (By.XPATH, '//*[@id="login_Layer"]/div')
     txt_Email = (By.XPATH, "//*[@type='text']//preceding::input[2]")
@@ -23,6 +24,4 @@ class LoginPage(base):
         self.do_Send_Keys(self.txt_Email, Email)
         self.do_Send_Keys(self.txt_Password, Password)
         self.doClick(self.bttn_Login)
-        #return HomePage(self.driver)
-
-
+        # return HomePage(self.driver)

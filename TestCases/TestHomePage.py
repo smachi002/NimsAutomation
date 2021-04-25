@@ -35,8 +35,8 @@ class TestHomePage(BaseTest):
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.sanity
     def test_Hover(self):
-        #self.lp = LoginPage(self.driver)
-        #self.lp.doLogin(self.Email, self.Password)
+        self.lp = LoginPage(self.driver)
+        self.lp.doLogin(self.Email, self.Password)
         homePage = HomePage(self.driver)
         homePage.doAdvancedSearch()
         allure.attach(self.driver.get_screenshot_as_png(), name="test_Hover", attachment_type=AttachmentType.PNG)
