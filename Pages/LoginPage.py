@@ -1,10 +1,10 @@
-from allure_commons.types import AttachmentType
+#from allure_commons.types import AttachmentType
 from selenium.webdriver.common.by import By
 from Pages.BasePage import base
 from Pages.HomePage import HomePage
 from Utility.readProperties import cnfParser
 import pytest
-import allure
+#import allure
 
 
 class LoginPage(base):
