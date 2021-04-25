@@ -1,5 +1,5 @@
-import allure
-from allure_commons.types import AttachmentType
+#import allure
+#from allure_commons.types import AttachmentType
 from Pages.LoginPage import LoginPage
 from TestCases.BaseTest import BaseTest
 from Utility.readProperties import cnfParser
