@@ -11,8 +11,8 @@ class TestLogin(BaseTest):
     Email = cnfParser.getEmail()
     Password = cnfParser.getPassword()
 
-    @allure.severity(allure.severity_level.BLOCKER)
-    @pytest.mark.sanity
+    #@allure.severity(allure.severity_level.BLOCKER)
+    #@pytest.mark.sanity
     def test_Login(self):
         self.lp = LoginPage(self.driver)
         self.lp.doLogin(self.Email, self.Password)
